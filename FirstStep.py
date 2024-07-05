@@ -59,7 +59,7 @@ def main():
                 print("Error importing Groq library. Make sure it's installed correctly.")
                 sys.exit(1)
 
-            api_key = input("Enter your Groq API Key: ").strip()
+            api_key = "{PUT_YOUR_API_KEY_HERE}"
             client = Groq(api_key=api_key)
             handle_conversation(client)
 
