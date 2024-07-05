@@ -85,8 +85,8 @@ if __name__ == "__main__":
 
 encrypted_code = cipher_suite.encrypt(original_code.encode())
 
-with open('CODES/encrypted_code.txt', 'wb') as file:
+with open('encrypted_code.txt', 'wb') as file:
     file.write(encrypted_code)
 
-with open('CODES/encryption_key.txt', 'wb') as key_file:
+with open('encryption_key.txt', 'wb') as key_file:
     key_file.write(key)
