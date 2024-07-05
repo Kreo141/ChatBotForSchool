@@ -1,11 +1,11 @@
 from cryptography.fernet import Fernet
 
-with open('CODES/encryption_key.txt', 'rb') as key_file:
+with open('encryption_key.txt', 'rb') as key_file:
     key = key_file.read()
 
 cipher_suite = Fernet(key)
 
-with open('CODES\encrypted_code.txt', 'rb') as file:
+with open('encrypted_code.txt', 'rb') as file:
     encrypted_code = file.read()
 
 decrypted_code = cipher_suite.decrypt(encrypted_code).decode()
